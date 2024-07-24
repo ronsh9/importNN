@@ -1,0 +1,146 @@
+baseURL: "https://ronsh9.github.io/importNN/"
+title: importNN
+paginate: 5
+theme: hugo-PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts", "papermod"]
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  description: "importNN Blog"
+  author: Ron Shprints
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  ShowRssButtonInSectionTermList: false
+
+  # fuseOpts:
+  #   isCaseSensitive: false
+  #   shouldSort: true
+  #   location: 0
+  #   distance: 1000
+  #   threshold: 0.4
+  #   minMatchCharLength: 0
+  #   limit: 10
+  #   keys: ["title", "permalink", "summary", "content"]
+
+  assets:
+    disableHLJS: true
+    # disableFingerprinting: true
+    # favicon: "<link / abs url>"
+    # favicon16x16: "<link / abs url>"
+    # favicon32x32: "<link / abs url>"
+    # apple_touch_icon: "<link / abs url>"
+    # safari_pinned_tab: "<link / abs url>"
+
+  # label:
+  #   text: "importNN"
+  #   icon: /apple-touch-icon.png
+  #   iconHeight: 35
+
+  profileMode:
+    enabled: false
+    title: PaperMod
+    imageUrl: "#"
+    imageTitle: my image
+    # imageWidth: 120
+    # imageHeight: 120
+    buttons:
+      - name: Archives
+        url: archives
+      - name: Tags
+        url: tags
+
+  homeInfoParams:
+    Title: "Hello World 🤖+🧠"
+    Content: >
+      👋 Welcome to importNN: this is <a href="https://ronsh9.github.io/" target="_blank">Ron Shprints</a> speaking, and I'm glad to introduce this blog.
+
+      - I opened it so I can start documenting my learning notes and share them with everyone. You can expect the contents to be mostly about deep learning.
+
+      - Beyond technical reviews, you can also expect to find some opinionated and exploratory posts. 
+      If you truly seek to understand intelligence, you have to understand it all.
+
+  socialIcons:
+    - name: x
+      url: "https://x.com/RShprints"
+    - name: github
+      url: "https://github.com/ronsh9"
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=xGMLzr4AAAAJ&hl=en"
+
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
+
+  # cover:
+  #   hidden: true
+  #   hiddenInList: true
+  #   hiddenInSingle: true
+
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes"
+  #   appendFilePath: true
+
+menu:
+  main:
+    - name: Posts
+      url: /
+      weight: 4
+    - name: Archive
+      url: /archives/
+      weight: 5
+    - name: Search
+      url: /search/
+      weight: 10
+    - name: Tags
+      url: /tags/
+      weight: 10
+
+# pygmentsUseClasses: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
